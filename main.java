@@ -1,10 +1,17 @@
+import java.lang.Math
 
 class Main() {
-    string Main(float sqrtable) {
-         if (sqrtable != Math.round(sqrtable)) {
+    float sqrt(float sqrtable) {
+         return Math.sqrt(sqrtable);
+    }
+    int round(float rndable) {
+         return Math.round(rndable);
+    }
+    string Main(float isperfect) {
+         if (isperfect != round(isperfect)) {
               return “Not a perfect square”;
          }
-         elif (Math.sqrt(sqrtable) != Math.round(Math.sqrt(sqrtable))) {
+         elif (sqrt(isperfect) != round(sqrt(isperfect))) {
              return “Not a perfect square”;
          }
          else {
