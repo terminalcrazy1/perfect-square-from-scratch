@@ -2,10 +2,10 @@ import java.lang.Math
 
 class Main() {
     float sqrt(float sqrtable) {
-         return Math.sqrt(sqrtable);
+         floor()
     }
-    int round(float rndable) {
-         return Math.round(rndable);
+    int floor(float rndable) {
+         return Math.floor(rndable);
     }
     string Main(float isperfect) {
          if (isperfect != round(isperfect)) {
