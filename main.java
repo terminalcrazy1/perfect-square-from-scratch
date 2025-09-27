@@ -1,21 +1,32 @@
 import java.lang.Math
 
-class Main() {
-    float sqrt(float sqrtable) {
-         return floor(sqrtable);
+public class Main() {
+    // this is a internal sqrt function NOT fully functional
+    private float sqrt(float sqrtable) {
+        iter = 1;
+        sqrd = iter*iter;
+        while (sqrd < sqrtable && sqrd != sqrtable) {
+            iter += 1;
+            sqrd = iter*iter;
+        }
+        if (sqrd != sqrtable) {
+            return sqrd - 0.9;
+        } else {
+            return sqrd;
+        }
     }
-    int floor(float rndable) {
-         return Math.floor(rndable);
+    private int floor(float rndable) {
+        return Math.floor(rndable);
     }
-    string Main(float isperfect) {
-         if (isperfect != round(isperfect)) {
-              return “Not a perfect square”;
-         }
-         elif (sqrt(isperfect) != round(sqrt(isperfect))) {
+    public string Main(float isperfect) {
+        if (isperfect != floor(isperfect)) {
              return “Not a perfect square”;
-         }
-         else {
-             return “Perfect square”;
-         }
+        }
+        elif (sqrt(isperfect) != floor(sqrt(isperfect))) {
+            return “Not a perfect square”;
+        }
+        else {
+            return “Perfect square”;
+        }
     }
 }
