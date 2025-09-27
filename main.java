@@ -2,7 +2,7 @@ import java.lang.Math
 
 class Main() {
     float sqrt(float sqrtable) {
-         floor()
+         floor(sqrtable)
     }
     int floor(float rndable) {
          return Math.floor(rndable);
