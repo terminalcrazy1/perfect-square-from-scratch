@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Main {
+    static String version = "a1";
+    
     // this is a internal sqrt function NOT fully functional
     private static float sqrt(float sqrtable) {
         int iter = 1;
@@ -22,7 +26,10 @@ public class Main {
         return rnded;
     }
     public static void main(String[] args) {
-        float isperfect = 9;
+        System.out.println("Perfect Square From Scratch V" + version);
+        System.out.print("Number: ");
+        Scanner scanner = new Scanner(System.in);
+        float isperfect = scanner.nextFloat();
         if (isperfect != floor(isperfect)) {
             System.out.print("Not a perfect square");
             return;
