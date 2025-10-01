@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
-    static String version = "a1";
+class Main {
+    static String version = "a1.0.1";
     
     // this is a internal sqrt function NOT fully functional
     private static float sqrt(float sqrtable) {
